@@ -17,7 +17,7 @@ class LibroController {
 
     constructor(service: LibroService?) {}
 
-    @PostMapping("/crearLibro")
+    @PostMapping("/crearLibro" , consumes = arrayOf("application/json"))
     fun CrearLibro(@RequestBody libro: Libro): ResponseEntity<Libro> {
         return ResponseEntity.ok(libroService!!.createLibro(libro))
     }

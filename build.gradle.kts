@@ -2,6 +2,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
 	id("org.springframework.boot") version "2.6.7"
+
 	id("io.spring.dependency-management") version "1.0.11.RELEASE"
 	kotlin("plugin.lombok") version "1.6.21"
 	id("io.freefair.lombok") version "5.3.0"
@@ -28,7 +29,13 @@ dependencies {
 	implementation("org.flywaydb:flyway-core")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+	compileOnly("org.projectlombok:lombok:1.18.22")
+	annotationProcessor("org.projectlombok:lombok:1.18.22")
+	testCompileOnly("org.projectlombok:lombok:1.18.22")
+	testAnnotationProcessor("org.projectlombok:lombok:1.18.22")
 	runtimeOnly("org.postgresql:postgresql")
+	testAnnotationProcessor("org.projectlombok:lombok")
+	annotationProcessor("org.projectlombok:lombok")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
