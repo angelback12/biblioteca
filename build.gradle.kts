@@ -6,6 +6,15 @@ plugins {
 	kotlin("jvm") version "1.6.21"
 	kotlin("plugin.spring") version "1.6.21"
 	kotlin("plugin.jpa") version "1.6.21"
+	id "org.sonarqube" version "3.3"
+}
+
+sonarqube {
+  properties {
+    property "sonar.projectKey", "angelback12_biblioteca"
+    property "sonar.organization", "angelback12"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
 }
 
 group = "co.edu.uniajc"
