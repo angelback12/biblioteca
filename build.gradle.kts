@@ -9,13 +9,6 @@ plugins {
 	id "org.sonarqube" version "3.3"
 }
 
-sonarqube {
-  properties {
-    property "sonar.projectKey", "angelback12_biblioteca"
-    property "sonar.organization", "angelback12"
-    property "sonar.host.url", "https://sonarcloud.io"
-  }
-}
 
 group = "co.edu.uniajc"
 version = "0.0.1-SNAPSHOT"
