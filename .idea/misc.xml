@@ -4,8 +4,12 @@
   <component name="ProjectRootManager" version="2" default="true" />
 =======
   <component name="ExternalStorageConfigurationManager" enabled="true" />
+<<<<<<< HEAD
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
 >>>>>>> developer
+=======
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="jbr-11" project-jdk-type="JavaSDK" />
+>>>>>>> b66f4ba33baaff0401bafe8e1a7e41c0d49397a4
   <component name="ProjectType">
     <option name="id" value="jpab" />
   </component>
