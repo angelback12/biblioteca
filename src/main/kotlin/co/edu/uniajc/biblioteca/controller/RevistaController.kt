@@ -1,6 +1,5 @@
 package co.edu.uniajc.biblioteca.controller
 
-import co.edu.uniajc.biblioteca.model.Libro
 import co.edu.uniajc.biblioteca.model.RevistaModel
 import co.edu.uniajc.biblioteca.service.RevistaService
 import org.springframework.beans.factory.annotation.Autowired
