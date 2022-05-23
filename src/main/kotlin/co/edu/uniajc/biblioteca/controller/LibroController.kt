@@ -19,7 +19,10 @@ class LibroController {
         return ResponseEntity.ok(libroService!!.createLibro(libro))
     }
 
-
+    @PostMapping("/updateLibro" , consumes = arrayOf("application/json"))
+    fun updateLibro(@RequestBody libro: Libro): ResponseEntity<Libro> {
+        return ResponseEntity.ok(libroService!!.createLibro(libro))
+    }
     @GetMapping("/listarLibros")
     fun ListarLibros(): ResponseEntity<List<Libro>> {
         return ResponseEntity.ok(libroService!!.ListarLibros())
