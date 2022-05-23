@@ -14,6 +14,10 @@ class LibroService {
         return libroRepository!!.save(libro)
     }
 
+    fun updateLibro(libro: Libro): Libro {
+        return libroRepository!!.save(libro)
+    }
+
     fun ListarLibros(): List<Libro> {
         return libroRepository!!.findAll() as List<Libro>
     }
