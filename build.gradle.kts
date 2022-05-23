@@ -37,7 +37,7 @@ dependencies {
 	runtimeOnly("org.postgresql:postgresql")
 	testAnnotationProcessor("org.projectlombok:lombok")
 	annotationProcessor("org.projectlombok:lombok")
-	testImplementation("org.springframework.boot:spring-boot-starter-test")
+
 }
 
 tasks.withType<KotlinCompile> {

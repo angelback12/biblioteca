@@ -22,6 +22,7 @@ ALTER TABLE "genero" OWNER to postgres;
 CREATE TABLE "autor"(
                         id serial NOT NULL,
                         name character varying(50) NOT NULL,
-                        nation character varying(50) NOT NULL
+                        nation character varying(50) NOT NULL,
+                        numlib number  NOT NULL
                        );
 ALTER TABLE "autor" OWNER to postgres;
