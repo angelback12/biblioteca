@@ -3,12 +3,16 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
 	id("org.flywaydb.flyway") version "8.5.10"
 	id("org.springframework.boot") version "2.6.7"
+
 	id("io.spring.dependency-management") version "1.0.11.RELEASE"
+	kotlin("plugin.lombok") version "1.6.21"
+	id("io.freefair.lombok") version "5.3.0"
 	kotlin("jvm") version "1.6.21"
 	kotlin("plugin.spring") version "1.6.21"
 	kotlin("plugin.jpa") version "1.6.21"
 
 }
+
 
 group = "co.edu.uniajc"
 version = "0.0.1-SNAPSHOT"
@@ -17,7 +21,9 @@ java.sourceCompatibility = JavaVersion.VERSION_11
 repositories {
 	mavenCentral()
 }
-
+kotlinLombok {
+	lombokConfigurationFile(file("lombok.config"))
+}
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-actuator")
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
@@ -26,8 +32,14 @@ dependencies {
 	implementation("org.flywaydb:flyway-core")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+	compileOnly("org.projectlombok:lombok:1.18.22")
+	annotationProcessor("org.projectlombok:lombok:1.18.22")
+	testCompileOnly("org.projectlombok:lombok:1.18.22")
+	testAnnotationProcessor("org.projectlombok:lombok:1.18.22")
 	runtimeOnly("org.postgresql:postgresql")
-	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	testAnnotationProcessor("org.projectlombok:lombok")
+	annotationProcessor("org.projectlombok:lombok")
+
 }
 
 tasks.withType<KotlinCompile> {
