@@ -4,10 +4,7 @@ import co.edu.uniajc.biblioteca.model.GeneroModel
 import co.edu.uniajc.biblioteca.service.GeneroService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.ResponseEntity
-import org.springframework.web.bind.annotation.PostMapping
-import org.springframework.web.bind.annotation.RequestBody
-import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.bind.annotation.RestController
+import org.springframework.web.bind.annotation.*
 
 
 @RestController
@@ -21,6 +18,15 @@ class GeneroController {
     @PostMapping("/crearGenero" , consumes = arrayOf("application/json"))
     fun CrearGenero(@RequestBody genero: GeneroModel): ResponseEntity<GeneroModel> {
         return ResponseEntity.ok(generoService!!.createGenero(genero))
+    }
+
+    @PostMapping("/updateGenero" , consumes = arrayOf("application/json"))
+    fun updateGenero(@RequestBody genero: GeneroModel): ResponseEntity<GeneroModel> {
+        return ResponseEntity.ok(generoService!!.createGenero(genero))
+    }
+    @GetMapping("/listarGeneros")
+    fun listarGeneros(): ResponseEntity<List<GeneroModel>> {
+        return ResponseEntity.ok(generoService!!.listarGeneros())
     }
 
 
