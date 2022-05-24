@@ -354,7 +354,7 @@
       <recent name="co.edu.uniajc.biblioteca.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Unnamed">
+  <component name="RunManager" selected="Gradle.Backend [jacocoTestReport]">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="co.edu.uniajc.biblioteca.BibliotecaApplicationKt" />
       <module name="biblioteca.main" />
