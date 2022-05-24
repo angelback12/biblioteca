@@ -21,7 +21,7 @@ class GeneroModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private var id : Long? = null
+    private var id : Integer? = null
 
     @Column(name = "name")
     private var name: String? = null
@@ -29,4 +29,15 @@ class GeneroModel {
     @Column(name = "description")
     private var description: String? = null
 
+    fun getId(): Integer? {
+        return id
+    }
+
+    fun getName(): String? {
+        return name
+    }
+
+    fun getDescription():String? {
+        return  description
+    }
 }
