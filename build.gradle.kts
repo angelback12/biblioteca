@@ -41,6 +41,13 @@ dependencies {
 	testAnnotationProcessor("org.projectlombok:lombok")
 	annotationProcessor("org.projectlombok:lombok")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+
+	//Implementacion swagger
+	implementation("org.springdoc:springdoc-openapi-data-rest:1.6.0")
+	implementation("org.springdoc:springdoc-openapi-ui:1.6.0")
+	implementation("org.springdoc:springdoc-openapi-kotlin:1.6.0")
+	implementation ("io.springfox:springfox-swagger2:3.0.0")
+	implementation ("io.springfox:springfox-swagger-ui:3.0.0")
 }
 
 tasks.withType<KotlinCompile> {
