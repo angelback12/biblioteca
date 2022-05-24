@@ -1,6 +1,7 @@
 package co.edu.uniajc.biblioteca.controller
 
 import co.edu.uniajc.biblioteca.model.GeneroModel
+import co.edu.uniajc.biblioteca.model.Libro
 import co.edu.uniajc.biblioteca.service.GeneroService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.ResponseEntity
@@ -22,6 +23,7 @@ class GeneroController {
 
     @PostMapping("/updateGenero" , consumes = arrayOf("application/json"))
     fun updateGenero(@RequestBody genero: GeneroModel): ResponseEntity<GeneroModel> {
+<<<<<<< HEAD
         return ResponseEntity.ok(generoService!!.createGenero(genero))
     }
     @GetMapping("/listarGeneros")
@@ -30,4 +32,12 @@ class GeneroController {
     }
 
 
+=======
+        return ResponseEntity.ok(generoService!!.updateGenero(genero))
+    }
+    @GetMapping("/listarGeneros")
+    fun listarGeneros(): ResponseEntity<List<GeneroModel>> {
+        return ResponseEntity.ok(generoService!!.ListarGeneros())
+    }
+>>>>>>> d7fdc88be518217b99ef0521d0fa2b44f50be169
 }

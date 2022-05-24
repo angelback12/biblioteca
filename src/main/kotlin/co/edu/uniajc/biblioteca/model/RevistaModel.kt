@@ -20,7 +20,7 @@ class RevistaModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private var id : Long? = null
+    private var id : Integer? = null
 
     @Column(name = "name")
     private var name: String? = null
@@ -28,5 +28,21 @@ class RevistaModel {
     @Column(name = "description")
     private var description: String? = null
 
+    constructor(id: Integer?, name: String?, description: String?) {
+        this.id = id
+        this.name = name
+        this.description = description
+    }
 
+    fun getId(): Integer? {
+        return id
+    }
+
+    fun getName(): String? {
+        return name
+    }
+
+    fun getDescription():String? {
+        return  description
+    }
 }

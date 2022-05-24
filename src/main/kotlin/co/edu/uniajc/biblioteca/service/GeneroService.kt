@@ -1,6 +1,7 @@
 package co.edu.uniajc.biblioteca.service
 
 import co.edu.uniajc.biblioteca.model.GeneroModel
+import co.edu.uniajc.biblioteca.model.Libro
 import co.edu.uniajc.biblioteca.repository.GeneroRepository
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
@@ -12,6 +13,13 @@ class GeneroService {
 
     fun createGenero(genero: GeneroModel): GeneroModel {
         return GeneroRepository!!.save(genero)
+    }
+    fun updateGenero(genero: GeneroModel): GeneroModel {
+        return GeneroRepository!!.save(genero)
+    }
+
+    fun ListarGeneros(): List<GeneroModel> {
+        return GeneroRepository!!.findAll() as List<GeneroModel>
     }
 
     fun updateGenero(genero: GeneroModel): GeneroModel {

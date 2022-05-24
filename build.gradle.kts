@@ -11,6 +11,11 @@ plugins {
 	kotlin("plugin.spring") version "1.6.21"
 	kotlin("plugin.jpa") version "1.6.21"
 
+<<<<<<< HEAD
+=======
+	//se implementa el jacoco
+	jacoco
+>>>>>>> d7fdc88be518217b99ef0521d0fa2b44f50be169
 }
 
 
@@ -40,6 +45,16 @@ dependencies {
 	testAnnotationProcessor("org.projectlombok:lombok")
 	annotationProcessor("org.projectlombok:lombok")
 
+	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	testImplementation("io.mockk:mockk:1.9.3")
+
+	//Implementacion swagger
+	implementation("org.springdoc:springdoc-openapi-data-rest:1.6.0")
+	implementation("org.springdoc:springdoc-openapi-ui:1.6.0")
+	implementation("org.springdoc:springdoc-openapi-kotlin:1.6.0")
+	implementation ("io.springfox:springfox-swagger2:3.0.0")
+	implementation ("io.springfox:springfox-swagger-ui:3.0.0")
+
 }
 
 tasks.withType<KotlinCompile> {
@@ -52,3 +67,25 @@ tasks.withType<KotlinCompile> {
 tasks.withType<Test> {
 	useJUnitPlatform()
 }
+
+jacoco {
+	toolVersion = "0.8.7"
+	reportsDirectory.set(layout.buildDirectory.dir("customJacocoReportDir"))
+}
+
+tasks.test {
+	finalizedBy(tasks.jacocoTestReport) // report is always generated after tests run
+}
+tasks.jacocoTestReport {
+	dependsOn(tasks.test) // tests are required to run before generating the report
+}
+
+tasks.jacocoTestReport {
+	reports {
+		xml.required.set(true)
+		csv.required.set(false)
+		html.outputLocation.set(layout.buildDirectory.dir("jacocoHtml"))
+	}
+}
+
+

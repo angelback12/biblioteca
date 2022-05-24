@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="POST /genero/updateGenero" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-05-24T16:42:10" hostname="LAPTOP-7HPK3AKR" time="0.041">
+  <properties/>
+  <testcase name="actualizar genero()" classname="co.edu.uniajc.biblioteca.controller.GeneroControllerTest$PostUpdateGenero" time="0.041"/>
+  <system-out><![CDATA[2022-05-24 11:42:10.626  INFO 2688 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [co.edu.uniajc.biblioteca.controller.GeneroControllerTest$PostUpdateGenero], using SpringBootContextLoader
+2022-05-24 11:42:10.627  INFO 2688 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [co.edu.uniajc.biblioteca.controller.GeneroControllerTest$PostUpdateGenero]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-05-24 11:42:10.628  INFO 2688 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [co.edu.uniajc.biblioteca.controller.GeneroControllerTest$PostUpdateGenero]: PostUpdateGenero does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-05-24 11:42:10.631  INFO 2688 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration co.edu.uniajc.biblioteca.BibliotecaApplication for test class co.edu.uniajc.biblioteca.controller.GeneroControllerTest$PostUpdateGenero
+2022-05-24 11:42:10.634  INFO 2688 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-05-24 11:42:10.635  INFO 2688 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1d86f20b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@c2684c9, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@705030d0, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4d7f933c, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@67432632, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5f7be6df, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2edc8b50, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1f8b1bc4, org.springframework.test.context.event.EventPublishingTestExecutionListener@6187ccb1, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@614a8340, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2b060232, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6c9479ad, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@33a9d2ca, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@6cc177c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1d408205]
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /genero/updateGenero
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"59"]
+             Body = {"id":6,"name":"sancho pansa","description":"sancho pansa"}
+    Session Attrs = {}
+
+Handler:
+             Type = co.edu.uniajc.biblioteca.controller.GeneroController
+           Method = co.edu.uniajc.biblioteca.controller.GeneroController#updateGenero(GeneroModel)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"id":6,"name":"sancho pansa","description":"sancho pansa"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
