@@ -11,7 +11,16 @@ import org.springframework.stereotype.Service
     private val libroRepository: LibroRepository ? = null
 
     fun createLibro(libro: Libro): Libro {
-<span class="nc" id="L14">        return libroRepository!!.save(libro)</span>
+<span class="fc" id="L14">        return libroRepository!!.save(libro)</span>
     }
+
+    fun updateLibro(libro: Libro): Libro {
+<span class="nc" id="L18">        return libroRepository!!.save(libro)</span>
+    }
+
+    fun ListarLibros(): List&lt;Libro&gt; {
+<span class="fc" id="L22">        return libroRepository!!.findAll() as List&lt;Libro&gt;</span>
+    }
+
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

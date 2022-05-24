@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - POST /libro/updateLibro</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>POST /libro/updateLibro</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/co.edu.uniajc.biblioteca.controller.html">co.edu.uniajc.biblioteca.controller</a> &gt; LibroControllerTest$PostNewBank</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.032s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">actualizar libros()</td>
+<td class="success">0.032s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2022-05-24 11:42:10.783  INFO 2688 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [co.edu.uniajc.biblioteca.controller.LibroControllerTest$PostNewBank], using SpringBootContextLoader
+2022-05-24 11:42:10.784  INFO 2688 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [co.edu.uniajc.biblioteca.controller.LibroControllerTest$PostNewBank]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-05-24 11:42:10.785  INFO 2688 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [co.edu.uniajc.biblioteca.controller.LibroControllerTest$PostNewBank]: PostNewBank does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-05-24 11:42:10.788  INFO 2688 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration co.edu.uniajc.biblioteca.BibliotecaApplication for test class co.edu.uniajc.biblioteca.controller.LibroControllerTest$PostNewBank
+2022-05-24 11:42:10.791  INFO 2688 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-05-24 11:42:10.792  INFO 2688 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@65c5e2c8, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@23f5b478, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@68b642c9, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@73bb30ce, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@39a24fd3, org.springframework.test.context.support.DirtiesContextTestExecutionListener@377a7aeb, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6d00d6c7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4797b6e9, org.springframework.test.context.event.EventPublishingTestExecutionListener@6ce0b51f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@8a9274a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@63f47e76, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@192ebc1f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@708fba68, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@315d4044, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@711a9fd7]
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /libro/updateLibro
+       Parameters = {}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;, Content-Length:&quot;60&quot;]
+             Body = {&quot;id&quot;:14,&quot;name&quot;:&quot;sancho pansa&quot;,&quot;description&quot;:&quot;sancho pansa&quot;}
+    Session Attrs = {}
+
+Handler:
+             Type = co.edu.uniajc.biblioteca.controller.LibroController
+           Method = co.edu.uniajc.biblioteca.controller.LibroController#updateLibro(Libro)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:&quot;application/json&quot;]
+     Content type = application/json
+             Body = {&quot;id&quot;:14,&quot;name&quot;:&quot;sancho pansa&quot;,&quot;description&quot;:&quot;sancho pansa&quot;}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4.1</a> at 24/05/2022, 11:42:11 a. m.</p>
+</div>
+</div>
+</body>
+</html>

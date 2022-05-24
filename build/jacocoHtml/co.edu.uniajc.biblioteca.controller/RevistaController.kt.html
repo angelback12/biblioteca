@@ -5,24 +5,29 @@ import co.edu.uniajc.biblioteca.model.RevistaModel
 import co.edu.uniajc.biblioteca.service.RevistaService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.ResponseEntity
-import org.springframework.web.bind.annotation.PostMapping
-import org.springframework.web.bind.annotation.RequestBody
-import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.bind.annotation.RestController
+import org.springframework.web.bind.annotation.*
 
 @RestController
 @RequestMapping(&quot;/revista&quot;)
 
 class RevistaController {
     @Autowired
-<span class="nc" id="L18">    var revistaService: RevistaService? = null</span>
+<span class="pc" id="L15">    var revistaService: RevistaService? = null</span>
 
-<span class="fc" id="L20">    constructor(service: RevistaService?) {}</span>
+<span class="nc" id="L17">    constructor(service: RevistaService?) {}</span>
+<span class="fc" id="L18">    constructor()</span>
 
     @PostMapping(&quot;/crearRevista&quot; , consumes = arrayOf(&quot;application/json&quot;))
     fun CrearRevista(@RequestBody revista: RevistaModel): ResponseEntity&lt;RevistaModel&gt; {
-<span class="nc" id="L24">        return ResponseEntity.ok(revistaService!!.createRevista(revista))</span>
+<span class="nc" id="L22">        return ResponseEntity.ok(revistaService!!.createRevista(revista))</span>
     }
-
+    @PostMapping(&quot;/updateRevista&quot; , consumes = arrayOf(&quot;application/json&quot;))
+    fun updateRevista(@RequestBody revista: RevistaModel): ResponseEntity&lt;RevistaModel&gt; {
+<span class="fc" id="L26">        return ResponseEntity.ok(revistaService!!.updateRevista(revista))</span>
+    }
+    @GetMapping(&quot;/listarRevista&quot;)
+    fun ListarLibros(): ResponseEntity&lt;List&lt;RevistaModel&gt;&gt; {
+<span class="fc" id="L30">        return ResponseEntity.ok(revistaService!!.ListarRevista())</span>
+    }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

@@ -7,7 +7,7 @@ import lombok.Setter
 import javax.persistence.*
 
 
-<span class="fc" id="L10">@Setter</span>
+@Setter
 @Getter
 @NoArgsConstructor
 @RequiredArgsConstructor
@@ -16,12 +16,12 @@ import javax.persistence.*
 @Table(name = &quot;genero&quot;)
 
 
-<span class="fc" id="L19">class GeneroModel {</span>
+class GeneroModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = &quot;id&quot;)
-    private var id : Long? = null
+    private var id : Integer? = null
 
     @Column(name = &quot;name&quot;)
     private var name: String? = null
@@ -29,5 +29,23 @@ import javax.persistence.*
     @Column(name = &quot;description&quot;)
     private var description: String? = null
 
+<span class="fc" id="L32">    constructor(id: Integer?, name: String?, description: String?) {</span>
+<span class="fc" id="L33">        this.id = id</span>
+<span class="fc" id="L34">        this.name = name</span>
+<span class="fc" id="L35">        this.description = description</span>
+<span class="fc" id="L36">    }</span>
+
+
+    fun getId(): Integer? {
+<span class="fc" id="L40">        return id</span>
+    }
+
+    fun getName(): String? {
+<span class="fc" id="L44">        return name</span>
+    }
+
+    fun getDescription():String? {
+<span class="fc" id="L48">        return  description</span>
+    }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

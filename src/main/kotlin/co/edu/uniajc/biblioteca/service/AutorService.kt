@@ -1,6 +1,7 @@
 package co.edu.uniajc.biblioteca.service
 
 import co.edu.uniajc.biblioteca.model.AutorModel
+import co.edu.uniajc.biblioteca.model.GeneroModel
 import co.edu.uniajc.biblioteca.repository.AutorRepository
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
@@ -13,5 +14,13 @@ class AutorService {
 
     fun createAutor(autor: AutorModel): AutorModel{
         return autorRepository!!.save(autor)
+    }
+
+    fun updateAutor(autor: AutorModel): AutorModel {
+        return autorRepository!!.save(autor)
+    }
+
+    fun ListarAutor(): List<AutorModel> {
+        return autorRepository!!.findAll() as List<AutorModel>
     }
 }
