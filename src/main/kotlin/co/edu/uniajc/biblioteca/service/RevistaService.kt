@@ -1,6 +1,7 @@
 package co.edu.uniajc.biblioteca.service
 
 
+import co.edu.uniajc.biblioteca.model.GeneroModel
 import co.edu.uniajc.biblioteca.model.RevistaModel
 import co.edu.uniajc.biblioteca.repository.RevistaRepository
 import org.springframework.beans.factory.annotation.Autowired
@@ -14,5 +15,13 @@ class RevistaService {
 
     fun createRevista(revista: RevistaModel): RevistaModel {
         return RevistaRepository!!.save(revista)
+    }
+
+    fun updateRevista(revista: RevistaModel): RevistaModel {
+        return RevistaRepository!!.save(revista)
+    }
+
+    fun ListarRevista(): List<RevistaModel> {
+        return RevistaRepository!!.findAll() as List<RevistaModel>
     }
 }
