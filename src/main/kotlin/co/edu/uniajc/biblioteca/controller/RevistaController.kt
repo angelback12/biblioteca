@@ -15,6 +15,7 @@ class RevistaController {
     var revistaService: RevistaService? = null
 
     constructor(service: RevistaService?) {}
+    constructor()
 
     @PostMapping("/crearRevista" , consumes = arrayOf("application/json"))
     fun CrearRevista(@RequestBody revista: RevistaModel): ResponseEntity<RevistaModel> {
@@ -24,7 +25,7 @@ class RevistaController {
     fun updateRevista(@RequestBody revista: RevistaModel): ResponseEntity<RevistaModel> {
         return ResponseEntity.ok(revistaService!!.updateRevista(revista))
     }
-    @GetMapping("/listarLibros")
+    @GetMapping("/listarRevista")
     fun ListarLibros(): ResponseEntity<List<RevistaModel>> {
         return ResponseEntity.ok(revistaService!!.ListarRevista())
     }

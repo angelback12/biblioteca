@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - GET /libro/listarlibros</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>GET /libro/listarlibros</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/co.edu.uniajc.biblioteca.controller.html">co.edu.uniajc.biblioteca.controller</a> &gt; LibroControllerTest$CrearLibro</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.056s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">listar libros()</td>
+<td class="success">0.056s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2022-05-24 11:42:10.707  INFO 2688 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [co.edu.uniajc.biblioteca.controller.LibroControllerTest$CrearLibro], using SpringBootContextLoader
+2022-05-24 11:42:10.709  INFO 2688 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [co.edu.uniajc.biblioteca.controller.LibroControllerTest$CrearLibro]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-05-24 11:42:10.710  INFO 2688 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [co.edu.uniajc.biblioteca.controller.LibroControllerTest$CrearLibro]: CrearLibro does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-05-24 11:42:10.714  INFO 2688 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration co.edu.uniajc.biblioteca.BibliotecaApplication for test class co.edu.uniajc.biblioteca.controller.LibroControllerTest$CrearLibro
+2022-05-24 11:42:10.717  INFO 2688 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-05-24 11:42:10.718  INFO 2688 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1ca644de, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6b54e5cb, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@28774f6b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@30c4393b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1eea0b49, org.springframework.test.context.support.DirtiesContextTestExecutionListener@52dcdfe2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4042dec5, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@515e3a17, org.springframework.test.context.event.EventPublishingTestExecutionListener@1f20c336, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2b373cff, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7dd56baa, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5dfb7885, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@445b397f, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@569935cf, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@479c8d]
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /libro/listarLibros
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = co.edu.uniajc.biblioteca.controller.LibroController
+           Method = co.edu.uniajc.biblioteca.controller.LibroController#ListarLibros()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:&quot;application/json&quot;]
+     Content type = application/json
+             Body = [{&quot;id&quot;:1,&quot;name&quot;:&quot;QUIJOTE DE LA MANCHA&quot;,&quot;description&quot;:&quot;SANCHO PANSA&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;QUIJOTE DE LA MANCHA&quot;,&quot;description&quot;:&quot;SANCHO PANSA&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;HOMERO&quot;,&quot;description&quot;:&quot;HOMERO&quot;},{&quot;id&quot;:4,&quot;name&quot;:&quot;LA ODISEA&quot;,&quot;description&quot;:&quot;LA ODISEA&quot;},{&quot;id&quot;:5,&quot;name&quot;:&quot;MOVI DICK&quot;,&quot;description&quot;:&quot;MOVI DICK&quot;},{&quot;id&quot;:6,&quot;name&quot;:&quot;POSEIDON&quot;,&quot;description&quot;:&quot;POSEIDON&quot;},{&quot;id&quot;:7,&quot;name&quot;:&quot;EL ESTELAR&quot;,&quot;description&quot;:&quot;EL ESTELAR&quot;},{&quot;id&quot;:8,&quot;name&quot;:&quot;ULTRAVIOLETA&quot;,&quot;description&quot;:&quot;ULTRAVIOLETA&quot;},{&quot;id&quot;:9,&quot;name&quot;:&quot;ULTRAVIOLETA 4&quot;,&quot;description&quot;:&quot;ULTRAVIOLETA 4&quot;},{&quot;id&quot;:10,&quot;name&quot;:&quot;LIBRO DE SEMINARIO ee &quot;,&quot;description&quot;:&quot;LIBRO DE SEMINARIO 1&quot;},{&quot;id&quot;:11,&quot;name&quot;:&quot;sancho pansa&quot;,&quot;description&quot;:&quot;sancho pansa&quot;},{&quot;id&quot;:12,&quot;name&quot;:&quot;sancho pansa&quot;,&quot;description&quot;:&quot;sancho pansa&quot;},{&quot;id&quot;:13,&quot;name&quot;:&quot;sancho pansa&quot;,&quot;description&quot;:&quot;sancho pansa&quot;},{&quot;id&quot;:14,&quot;name&quot;:&quot;sancho pansa&quot;,&quot;description&quot;:&quot;sancho pansa&quot;},{&quot;id&quot;:15,&quot;name&quot;:&quot;sancho pansa&quot;,&quot;description&quot;:&quot;sancho pansa&quot;},{&quot;id&quot;:16,&quot;name&quot;:&quot;sancho pansa&quot;,&quot;description&quot;:&quot;sancho pansa&quot;},{&quot;id&quot;:17,&quot;name&quot;:&quot;sancho pansa&quot;,&quot;description&quot;:&quot;sancho pansa&quot;},{&quot;id&quot;:18,&quot;name&quot;:&quot;sancho pansa&quot;,&quot;description&quot;:&quot;sancho pansa&quot;}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4.1</a> at 24/05/2022, 11:42:11 a. m.</p>
+</div>
+</div>
+</body>
+</html>
