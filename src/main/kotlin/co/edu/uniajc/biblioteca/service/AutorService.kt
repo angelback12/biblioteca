@@ -20,11 +20,7 @@ class AutorService {
         return autorRepository!!.save(autor)
     }
 
-<<<<<<< HEAD
     fun listarAutor(): List<AutorModel> {
-=======
-    fun ListarAutor(): List<AutorModel> {
->>>>>>> d7fdc88be518217b99ef0521d0fa2b44f50be169
         return autorRepository!!.findAll() as List<AutorModel>
     }
 }

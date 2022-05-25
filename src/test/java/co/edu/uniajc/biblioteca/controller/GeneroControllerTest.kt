@@ -67,7 +67,7 @@ internal class GeneroControllerTest @Autowired constructor(
         inner class PostUpdateGenero {
             @Test
             fun `actualizar genero`() {
-                val newGeneroExped = GeneroModel(Integer(6), "sancho pansa", "sancho pansa")
+                val newGeneroExped = GeneroModel(Integer(2), "sancho pansa", "sancho pansa")
 
                 val performPost = mockMvc.post("/genero/updateGenero") {
                     contentType = MediaType.APPLICATION_JSON

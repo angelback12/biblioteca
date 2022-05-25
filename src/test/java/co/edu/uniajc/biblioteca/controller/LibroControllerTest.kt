@@ -70,7 +70,7 @@ internal class LibroControllerTest @Autowired constructor(
             @Test
             fun `actualizar libros`() {
                 val newLibro = Libro(null, "sancho pansa", "sancho pansa")
-                val newLibroEspect = Libro(Integer(14), "sancho pansa", "sancho pansa")
+                val newLibroEspect = Libro(Integer(2), "sancho pansa", "sancho pansa")
 
                 val performPost = mockMvc.post("/libro/updateLibro") {
                     contentType = MediaType.APPLICATION_JSON

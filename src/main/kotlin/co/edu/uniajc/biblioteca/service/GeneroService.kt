@@ -22,12 +22,4 @@ class GeneroService {
         return GeneroRepository!!.findAll() as List<GeneroModel>
     }
 
-    fun updateGenero(genero: GeneroModel): GeneroModel {
-        return GeneroRepository!!.save(genero)
-    }
-
-    fun listarGeneros(): List<GeneroModel> {
-        return GeneroRepository!!.findAll() as List<GeneroModel>
-    }
-
 }

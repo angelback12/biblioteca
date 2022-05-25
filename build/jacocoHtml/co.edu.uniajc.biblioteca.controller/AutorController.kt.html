@@ -14,21 +14,20 @@ public class AutorController {
     @Autowired
 <span class="pc" id="L15">    var autorService: AutorService? = null</span>
 
-<span class="nc" id="L17">    constructor(service: AutorService?) {}</span>
-<span class="fc" id="L18">    constructor()</span>
+<span class="fc" id="L17">    constructor(service: AutorService?) {}</span>
 
     @PostMapping(&quot;/crearAutor&quot;, consumes = arrayOf(&quot;application/json&quot;))
     fun CrearAutor(@RequestBody autor: AutorModel): ResponseEntity&lt;AutorModel&gt; {
-<span class="nc" id="L22">        return ResponseEntity.ok(autorService!!.createAutor(autor))</span>
+<span class="nc" id="L21">        return ResponseEntity.ok(autorService!!.createAutor(autor))</span>
     }
 
     @PostMapping(&quot;/updateAutor&quot; , consumes = arrayOf(&quot;application/json&quot;))
     fun updateAutor(@RequestBody autor: AutorModel): ResponseEntity&lt;AutorModel&gt; {
-<span class="fc" id="L27">        return ResponseEntity.ok(autorService!!.updateAutor(autor))</span>
+<span class="fc" id="L26">        return ResponseEntity.ok(autorService!!.createAutor(autor))</span>
     }
     @GetMapping(&quot;/listarAutores&quot;)
     fun listarAutores(): ResponseEntity&lt;List&lt;AutorModel&gt;&gt; {
-<span class="fc" id="L31">        return ResponseEntity.ok(autorService!!.ListarAutor())</span>
+<span class="fc" id="L30">        return ResponseEntity.ok(autorService!!.listarAutor())</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

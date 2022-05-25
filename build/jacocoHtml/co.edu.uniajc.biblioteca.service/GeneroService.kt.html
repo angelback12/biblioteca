@@ -12,10 +12,10 @@ import org.springframework.stereotype.Service
     private val GeneroRepository: GeneroRepository? = null
 
     fun createGenero(genero: GeneroModel): GeneroModel {
-<span class="nc" id="L15">        return GeneroRepository!!.save(genero)</span>
+<span class="fc" id="L15">        return GeneroRepository!!.save(genero)</span>
     }
     fun updateGenero(genero: GeneroModel): GeneroModel {
-<span class="fc" id="L18">        return GeneroRepository!!.save(genero)</span>
+<span class="nc" id="L18">        return GeneroRepository!!.save(genero)</span>
     }
 
     fun ListarGeneros(): List&lt;GeneroModel&gt; {

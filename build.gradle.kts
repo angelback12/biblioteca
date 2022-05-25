@@ -11,11 +11,9 @@ plugins {
 	kotlin("plugin.spring") version "1.6.21"
 	kotlin("plugin.jpa") version "1.6.21"
 
-<<<<<<< HEAD
-=======
 	//se implementa el jacoco
 	jacoco
->>>>>>> d7fdc88be518217b99ef0521d0fa2b44f50be169
+
 }
 
 

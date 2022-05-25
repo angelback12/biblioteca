@@ -16,9 +16,7 @@ class RevistaService {
     fun createRevista(revista: RevistaModel): RevistaModel {
         return RevistaRepository!!.save(revista)
     }
-
-<<<<<<< HEAD
-=======
+    
     fun updateRevista(revista: RevistaModel): RevistaModel {
         return RevistaRepository!!.save(revista)
     }
@@ -26,5 +24,4 @@ class RevistaService {
     fun ListarRevista(): List<RevistaModel> {
         return RevistaRepository!!.findAll() as List<RevistaModel>
     }
->>>>>>> d7fdc88be518217b99ef0521d0fa2b44f50be169
 }

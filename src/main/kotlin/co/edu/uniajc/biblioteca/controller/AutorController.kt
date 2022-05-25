@@ -15,7 +15,6 @@ public class AutorController {
     var autorService: AutorService? = null
 
     constructor(service: AutorService?) {}
-    constructor()
 
     @PostMapping("/crearAutor", consumes = arrayOf("application/json"))
     fun CrearAutor(@RequestBody autor: AutorModel): ResponseEntity<AutorModel> {
@@ -24,18 +23,10 @@ public class AutorController {
 
     @PostMapping("/updateAutor" , consumes = arrayOf("application/json"))
     fun updateAutor(@RequestBody autor: AutorModel): ResponseEntity<AutorModel> {
-<<<<<<< HEAD
         return ResponseEntity.ok(autorService!!.createAutor(autor))
-    }
-    @GetMapping("/listarAutor")
-    fun listarAutor(): ResponseEntity<List<AutorModel>> {
-        return ResponseEntity.ok(autorService!!.listarAutor())
-=======
-        return ResponseEntity.ok(autorService!!.updateAutor(autor))
     }
     @GetMapping("/listarAutores")
     fun listarAutores(): ResponseEntity<List<AutorModel>> {
-        return ResponseEntity.ok(autorService!!.ListarAutor())
->>>>>>> d7fdc88be518217b99ef0521d0fa2b44f50be169
+        return ResponseEntity.ok(autorService!!.listarAutor())
     }
 }
