@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="GET /libro/listarlibros" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-05-24T16:42:10" hostname="LAPTOP-7HPK3AKR" time="0.056">
+  <properties/>
+  <testcase name="listar libros()" classname="co.edu.uniajc.biblioteca.controller.LibroControllerTest$CrearLibro" time="0.056"/>
+  <system-out><![CDATA[2022-05-24 11:42:10.707  INFO 2688 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [co.edu.uniajc.biblioteca.controller.LibroControllerTest$CrearLibro], using SpringBootContextLoader
+2022-05-24 11:42:10.709  INFO 2688 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [co.edu.uniajc.biblioteca.controller.LibroControllerTest$CrearLibro]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-05-24 11:42:10.710  INFO 2688 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [co.edu.uniajc.biblioteca.controller.LibroControllerTest$CrearLibro]: CrearLibro does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-05-24 11:42:10.714  INFO 2688 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration co.edu.uniajc.biblioteca.BibliotecaApplication for test class co.edu.uniajc.biblioteca.controller.LibroControllerTest$CrearLibro
+2022-05-24 11:42:10.717  INFO 2688 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-05-24 11:42:10.718  INFO 2688 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1ca644de, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6b54e5cb, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@28774f6b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@30c4393b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1eea0b49, org.springframework.test.context.support.DirtiesContextTestExecutionListener@52dcdfe2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4042dec5, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@515e3a17, org.springframework.test.context.event.EventPublishingTestExecutionListener@1f20c336, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2b373cff, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7dd56baa, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5dfb7885, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@445b397f, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@569935cf, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@479c8d]
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /libro/listarLibros
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = co.edu.uniajc.biblioteca.controller.LibroController
+           Method = co.edu.uniajc.biblioteca.controller.LibroController#ListarLibros()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = [{"id":1,"name":"QUIJOTE DE LA MANCHA","description":"SANCHO PANSA"},{"id":2,"name":"QUIJOTE DE LA MANCHA","description":"SANCHO PANSA"},{"id":3,"name":"HOMERO","description":"HOMERO"},{"id":4,"name":"LA ODISEA","description":"LA ODISEA"},{"id":5,"name":"MOVI DICK","description":"MOVI DICK"},{"id":6,"name":"POSEIDON","description":"POSEIDON"},{"id":7,"name":"EL ESTELAR","description":"EL ESTELAR"},{"id":8,"name":"ULTRAVIOLETA","description":"ULTRAVIOLETA"},{"id":9,"name":"ULTRAVIOLETA 4","description":"ULTRAVIOLETA 4"},{"id":10,"name":"LIBRO DE SEMINARIO ee ","description":"LIBRO DE SEMINARIO 1"},{"id":11,"name":"sancho pansa","description":"sancho pansa"},{"id":12,"name":"sancho pansa","description":"sancho pansa"},{"id":13,"name":"sancho pansa","description":"sancho pansa"},{"id":14,"name":"sancho pansa","description":"sancho pansa"},{"id":15,"name":"sancho pansa","description":"sancho pansa"},{"id":16,"name":"sancho pansa","description":"sancho pansa"},{"id":17,"name":"sancho pansa","description":"sancho pansa"},{"id":18,"name":"sancho pansa","description":"sancho pansa"}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

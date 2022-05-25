@@ -30,6 +30,14 @@ class AutorModel {
     @Column(name = "numlib")
     private  var numlib : Integer? = null
 
+    constructor(id: Integer?, name: String?, nation: String?, numlib: Integer?) {
+        this.id = id
+        this.name = name
+        this.nation = nation
+        this.numlib = numlib
+    }
+
+
     fun getId(): Integer? {
         return id
     }

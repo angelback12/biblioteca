@@ -27,6 +27,12 @@ class Libro {
     @Column(name = "description")
     private var description: String? = null
 
+    constructor(id: Integer?, name: String?, description: String?) {
+        this.id = id
+        this.name = name
+        this.description = description
+    }
+
     fun getId(): Integer? {
         return id
     }
